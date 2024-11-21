@@ -5,7 +5,6 @@ import TeacherHero from '../components/TeacherHero/TeacherHero'
 const Teacher = () => {
   return (
    <>
-   <Header />
    <TeacherHero />
    </>
   )

@@ -1,23 +1,24 @@
 import React from 'react'
 import s from './Header.module.scss'
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
 
-<header class={s.header}>
-        <div class={s.container_1}>
-            <nav class={s.nav}>
-                <div class={s.logo}>
-                    <h1 class="h1__logo">StuDent ChaT</h1>
+<header className={s.header}>
+        <div className="container__main">
+            <nav className={s.nav}>
+                <div className={s.logo}>
+                    <h1 className={s.h1__logo}>StuDent ChaT</h1>
                 </div>
 
-                <div class={s.links}>
-                     <a href="index.html">Главная</a>
-                     <a href="group.html">Группа</a>
-                   <div class={s.news}>
-                    <li class={s.drop}><a href="news.html">Новости</a>
-                        <div class={s.dropdown_menu}>
-                            <ul class={s.drop__2}>
+                <div className={s.links}>
+                    <Link to={'/'}>Главная</Link>
+                     <a href="">Группа</a>
+                   <div className={s.news}>
+                    <li className={s.drop}><a href="">Новости</a>
+                        <div className={s.dropdown_menu}>
+                            <ul className={s.drop__2}>
                                 <li><a href="#">Все новости</a></li>
                                 <li><a href="#">Общество</a></li>
                                 <li><a href="#">Технологии</a></li>
@@ -27,7 +28,7 @@ const Header = () => {
                         </div>
                   </li>
                 </div>  
-                     <a href="">Учителя</a>
+                <Link to={'/Teacher'}>Учителя</Link>
                      <a href="">Регистрация/Войти</a>
                 </div>
             </nav>

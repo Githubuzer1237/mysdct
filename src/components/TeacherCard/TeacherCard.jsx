@@ -1,17 +1,18 @@
 import React from 'react'
 import s from './TeacherCard.module.scss'
+import { Link } from 'react-router-dom'
 const TeacherCard = () => {
   return (
     <>
-           <div class={s.teacher__card}>
-                     <div class={s.teacher__img__div}>  
+           <div className={s.teacher__card}>
+                     <Link className={s.teacher__img__div}>  
                          <img className={s.teacher__img} src="/teacher1.JPG" alt="" />
-                    <div class={s.teacher__btn__div}> <button class="teacher__btn">Написать</button></div>
-                </div>
-                        <div class={s.teacher__card__text}>
+                    <div className={s.teacher__btn__div}> <h1 className={s.teacher__btn}>Написать</h1></div>
+                </Link>
+                        <div className={s.teacher__card__text}>
                             <h3>Ботиржон Тожибоев</h3>
                             <h4>Учитель ***</h4>
-                            <p class={s.card__text}>Познакомьтесь с Ботиржоном Тожибоевым, 
+                            <p className={s.card__text}>Познакомьтесь с Ботиржоном Тожибоевым, 
                                 руководителем отдела мероприятий и выпускником 
                                 государственной школы. Сочетая в себе интересы
                                 к музыке, искусству, космосу и преподаванию, 

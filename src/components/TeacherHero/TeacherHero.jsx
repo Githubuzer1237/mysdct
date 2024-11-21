@@ -4,12 +4,12 @@ import TeacherCard from '../TeacherCard/TeacherCard'
 const TeacherHero = () => {
   return (
    <>
-           <section class={s.teacher}>
-            <div class={s.adaptivrotebal}>
-                <h1 class={s.teacher__title}>Учителя</h1>
+           <section className={s.teacher}>
+            <div className="container__main">
+                <h1 className={s.teacher__title}>Учителя</h1>
 
-                <div class={s.teacher__wrapper}>
-                  <div class={s.teacher__cards}>
+                <div className={s.teacher__wrapper}>
+                  <div className={s.teacher__cards}>
 
                      <TeacherCard />
                      <TeacherCard />
