@@ -29,7 +29,7 @@ const Header = () => {
                   </li>
                 </div>  
                 <Link to={'/Teacher'}>Учителя</Link>
-                     <a href="">Регистрация/Войти</a>
+                     <Link to={"/register"}>Регистрация/Войти</Link>
                 </div>
             </nav>
         </div>
